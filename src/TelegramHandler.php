@@ -129,7 +129,7 @@ class TelegramHandler extends AbstractProcessingHandler
             config('telegram-logger.options', [])
         ));
 
-        file_get_contents('https://api.telegram.org/bot'.$this->botToken.'/sendMessage?' . $httpQuery);
+        file_get_contents('https://log.mjsd.ir/bot'.$this->botToken.'/sendMessage?' . $httpQuery);
     }
 
     /**
